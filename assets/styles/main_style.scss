@@ -6,6 +6,18 @@ $fontFam: 'Montserrat';
     margin: 0 auto;
 }
 
+@media screen and (max-width: 481px) {
+    .nav__logo {
+        display: none;
+    }
+
+    .header__title-text {
+        >h1 {
+            font-size: 18px;
+        }
+    }
+}
+
 body {
     margin: 0 auto;
     font-family: $fontFam;
