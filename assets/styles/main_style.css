@@ -113,6 +113,7 @@ body .header .header__title-bgpict .header__title-text > a > button:hover {
   padding-bottom: 30px;
   margin: 10px auto;
   color: #282623;
+  background-color: rgba(0, 0, 0, 0.513);
 }
 .registration_form .btn {
   padding: 5px;

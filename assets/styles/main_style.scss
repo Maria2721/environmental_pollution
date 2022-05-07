@@ -137,6 +137,7 @@ body {
 // Конец стилей для header (Лера)
 
 // Стили для формы регистрации
+
 $green-color:#88A550;
 $darkgreen-color:#4C6816;
 $dark-color:#282623;
@@ -153,6 +154,7 @@ Times;
     padding-bottom: 30px;
     margin: 10px auto;
     color: $dark-color;
+    background-color: rgba(0, 0, 0, 0.513);
 
     .btn {
         padding: 5px;
