@@ -1,0 +1,96 @@
+// Стили для header (Лера)
+$fontFam: 'Montserrat';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    font-family: $fontFam;
+
+    .header {
+        height: 100vh;
+
+        .nav-color {
+            background-color: rgba(0, 0, 0, 0.909);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+
+            .nav__links {
+                >a {
+                    text-decoration: none;
+                    color: #fff;
+                    margin-right: 20px;
+
+                    &:hover {
+                        color: rgba(6, 198, 6, 0.655);
+                        transition: .3s;
+                    }
+                }
+            }
+
+            .nav__button {
+                >button {
+                    padding: 20px;
+                    color: #fff;
+                    background-color: rgba(6, 198, 6, 0.655);
+                    border: 1px solid rgba(0, 0, 0, 0.909);
+                    font-family: $fontFam;
+                    font-weight: 600;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: rgba(6, 198, 6, 0.655);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        .header__title-bgpict {
+            background: url(../img/header/bg1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .header__title-text {
+                max-width: 700px;
+                padding: 50px 0;
+                font-size: 1.5em;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.513);
+
+                >h1,
+                h2,
+                p {
+                    padding-left: 2%;
+                }
+
+                >a {
+                    >button {
+                        margin-left: 2%;
+                        padding: 20px;
+                        color: #fff;
+                        background-color: rgba(6, 198, 6, 0.655);
+                        border: 1px solid rgba(6, 198, 6, 0.655);
+                        font-family: $fontFam;
+                        font-weight: 600;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: rgba(6, 198, 6, 0.655);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Конец стилей для header (Лера)
