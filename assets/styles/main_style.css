@@ -112,12 +112,14 @@ body .header .header__title-bgpict .header__title-text > a > button:hover {
   padding: 5px;
   padding-bottom: 30px;
   margin: 10px auto;
-  color: #282623;
-  background-color: rgba(0, 0, 0, 0.513);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Montserrat" !important;
 }
 .registration_form .btn {
-  padding: 5px;
-  background-color: #88A550;
+  padding: 5px 10px;
+  background-color: rgba(6, 198, 6, 0.655);
+  color: #fff;
   border: none;
   font-size: 1.2rem;
 }
@@ -130,4 +132,13 @@ body .header .header__title-bgpict .header__title-text > a > button:hover {
 }
 .registration_form p {
   font-size: small;
+}
+
+.footer {
+  display: flex;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.909);
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main_style.css.map */

@@ -138,27 +138,25 @@ body {
 
 // Стили для формы регистрации
 
-$green-color:#88A550;
+$green-color: rgba(6, 198, 6, 0.655);
 $darkgreen-color:#4C6816;
 $dark-color:#282623;
 $grey-color:#A3A599;
 $yellow-color:#FBCD4B;
-
-$default-font: 'Roboto',
-sans-serif,
-Times;
 
 .registration_form {
     max-width: 25rem;
     padding: 5px;
     padding-bottom: 30px;
     margin: 10px auto;
-    color: $dark-color;
-    background-color: rgba(0, 0, 0, 0.513);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: $fontFam !important;
 
     .btn {
-        padding: 5px;
+        padding: 5px 10px;
         background-color: $green-color;
+        color: #fff;
         border: none;
         font-size: 1.2rem;
     }
@@ -174,4 +172,13 @@ Times;
     p {
         font-size: small;
     }
+}
+
+.footer {
+    display: flex;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.909);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
 }
