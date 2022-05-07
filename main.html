@@ -10,8 +10,9 @@
 
 <body>
     <article>
-        <div id="list">Введите ваши координаты:
+        <div id="list">Выберите город:
             <select id="choice" onchange="changeCity()">
+                <option>...</option>
                 <option value="moscow">Москва</option>
                 <option value="piter">Санкт-Петербург</option>
                 <option value="murmansk">Мурманск</option>
@@ -132,8 +133,6 @@
                     break;
             }
         };
-
-
 
 // document.addEventListener("DOMContentLoaded", function (event) {
         //     fetch("https://api.openweathermap.org/data/2.5/weather?lat=59.57&lon=30.19&appid=627cf8a1454b6eb1a2023bc5580b2107")
