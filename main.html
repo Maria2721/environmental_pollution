@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/main_style.css">
     <link rel="stylesheet" href="./assets/styles/main_news_style.css">
+    <link rel="stylesheet" href="./assets/styles/main_city_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Экологическая обстановка</title>
 </head>
@@ -46,11 +47,10 @@
         </div>
     </header>
 
+    <div class="news-header">
+        <h1>Ecology News</h1>
+    </div>
     <div class="container-news">
-        <div class="news-header">
-            <h1>Ecology News</h1>
-        </div>
-
         <div class="blocks-news">
             <div class=" item one">
                 <h6 class="blocks-news_header">Коалы признаны исчезающим видом. Все из-за пожаров и вырубки лесов</h6>
@@ -83,6 +83,32 @@
             </div>
         </div>
     </div>
+    <article>
+        <div id="list"><span class="chose-city">Выберите город:</span>
+            <select id="choice" onchange="changeCity()">
+                <option>...</option>
+                <option value="moscow">Москва</option>
+                <option value="piter">Санкт-Петербург</option>
+                <option value="murmansk">Мурманск</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="voronezh">Воронеж</option>
+            </select>
+        </div><br>
+        <div class="container-data">
+        <section class="weather">
+            <div id="latitude"></div>
+            <div id="longitude"></div>
+            <div id="temperature"></div>
+            <div id="pressure"></div>
+        </section><br>
+        <section class="pollution">
+            <div id="co"></div>
+            <div id="no"></div>
+            <div id="no2"></div>
+            <div id="so2"></div>
+        </section>
+        </div>
+    </article>
 
     <footer class="footer">
         Сделано командой "BUGbusters" 2022
@@ -90,6 +116,7 @@
 
     <script src="./assets/js/registration.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/city_information.js"></script>
 </body>
 
 </html>
