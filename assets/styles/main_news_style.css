@@ -1,0 +1,142 @@
+.news-header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blocks-news {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    position: relative;
+}
+
+.blocks-news_header {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+    max-width: 400px;
+    background-color: rgba(6, 198, 6, 0.655);
+    color: #fff;
+    font-size: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.par-news {
+    position: absolute;
+    bottom: 50px;
+    left: 5px;
+    max-width: 500px;
+    background-color: rgba(6, 198, 6, 0.655);
+    color: #fff;
+    font-size: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link-news {
+    color: #000000;
+}
+
+.link-news:hover {
+    color: #fff;
+}
+
+.one {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/CE56/production/_123222825_gettyimages-510169460.jpg.webp');
+}
+
+.two {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/17310/production/_123229949_tv070100970.jpg.webp');
+}
+
+.three {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/99EE/production/_123260493_mediaitem123260492.jpg.webp');
+}
+
+.four {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/507D/production/_108550602_gettyimages-601042892.jpg.webp');
+}
+
+.five {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/10077/production/_122955656_atacama-39.jpg.webp');
+}
+
+.six {
+    background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/170CB/production/_124311449_gettyimages-1234562828.jpg.webp');
+}
+
+.selected {
+    flex: 4;
+}
+
+.selected .blocks-news_header {
+    font-size: 20px;
+    padding: 5px;
+    transition: all 1s ease;
+}
+
+.selected .par-news {
+    font-size: 15px;
+    padding: 5px;
+    transition: all 1s ease;
+}
+
+
+@media all and (max-width: 800px) {
+    .blocks-news {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .selected .blocks-news_header {
+        font-size: 18px;
+    }
+    
+    .selected .par-news {
+        font-size: 13px;
+    }
+
+    .blocks-news_header {
+        position: absolute;
+        bottom: 100px;
+        left: 5px;
+        max-width: 300px;
+    }
+
+    .par-news {
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+        max-width: 400px;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .selected .blocks-news_header {
+        font-size: 15px;
+    }
+    
+    .selected .par-news {
+        font-size: 10px;
+    }
+
+    .blocks-news_header {
+        position: absolute;
+        bottom: 80px;
+        left: 2px;
+    }
+
+    .par-news {
+        position: absolute;
+        bottom: 10px;
+        left: 2px;
+    }
+}

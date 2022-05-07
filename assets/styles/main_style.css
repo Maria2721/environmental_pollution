@@ -1,6 +1,6 @@
 .container {
-  max-width: 1440px;
-  margin: 0px auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 481px) {
@@ -80,28 +80,4 @@ body .header .header__title-bgpict .header__title-text > a > button:hover {
   background-color: #fff;
   color: rgba(6, 198, 6, 0.655);
   transition: 0.3s;
-}
-
-.registration_form {
-  max-width: 25rem;
-  padding: 5px;
-  padding-bottom: 30px;
-  margin: 10px auto;
-  color: #282623;
-}
-.registration_form .btn {
-  padding: 5px;
-  background-color: #88A550;
-  border: none;
-  font-size: 1.2rem;
-}
-.registration_form .btn:focus, .registration_form .btn:active {
-  box-shadow: none !important;
-}
-.registration_form #errorMessage {
-  text-align: center;
-  color: #4C6816;
-}
-.registration_form p {
-  font-size: small;
 }/*# sourceMappingURL=main_style.css.map */

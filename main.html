@@ -8,50 +8,87 @@
     <link rel="shortcut icon" href="./assets/img/header/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/main_style.css">
+    <link rel="stylesheet" href="./assets/styles/main_news_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Экологическая обстановка</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="nav-color">
-                <nav class="nav">
-                    <div class="nav__logo">
-                        <img src="./assets/img/header/logo.png" alt="logo">
-                    </div>
-                    <div class="nav__links">
-                        <a href="#">НОВОСТИ</a>
-                        <a href="#">КАРТА</a>
-                        <a href="#">ЕЩЕ</a>
-                    </div>
-                    <div class="nav__button">
-                        <button class="button-registration" onclick="signUp()">РЕГИСТРАЦИЯ</button>
-                    </div>
-                </nav>
-            </div>
-            <div class="header__title-bgpict">
-                <div class="header__title">
-                    <div class="header__title-text">
-                        <h1>ПРОЕКТ ПО ОТСЛЕЖИВАНИЮ ЭКОЛОГИЧЕСКОЙ ОБСТАНОВКИ</h1>
-                        <h2>Наша жизнь зависит от здоровья планеты!</h2>
-                        <p>Многие из глобальных проблем здравоохранения, с которыми мы сталкиваемся сегодня, в том числе
-                            инфекционные болезни, недоедание и неинфекционные заболевания, связаны с упадком биоразнообразия
-                            и
-                            экосистем.</p>
-                        <a href="https://www.youtube.com/watch?v=BB6hw9jKUJI&t=100s"
-                            target="_blank"><button>СМОТРЕТЬ</button></a>
-                    </div>
+    <header class="header">
+        <div class="nav-color">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./assets/img/header/logo.png" alt="logo">
+                </div>
+                <div class="nav__links">
+                    <a href="#">НОВОСТИ</a>
+                    <a href="#">КАРТА</a>
+                    <a href="#">ЕЩЕ</a>
+                </div>
+                <div class="nav__button">
+                    <button class="button-registration" onclick="signUp()">РЕГИСТРАЦИЯ</button>
+                </div>
+            </nav>
+        </div>
+        <div class="header__title-bgpict">
+            <div class="header__title container">
+                <div class="header__title-text">
+                    <h1>ПРОЕКТ ПО ОТСЛЕЖИВАНИЮ ЭКОЛОГИЧЕСКОЙ ОБСТАНОВКИ</h1>
+                    <h2>Наша жизнь зависит от здоровья планеты!</h2>
+                    <p>Многие из глобальных проблем здравоохранения, с которыми мы сталкиваемся сегодня, в том числе
+                        инфекционные болезни, недоедание и неинфекционные заболевания, связаны с упадком биоразнообразия
+                        и
+                        экосистем.</p>
+                    <a href="https://www.youtube.com/watch?v=BB6hw9jKUJI&t=100s"
+                        target="_blank"><button>СМОТРЕТЬ</button></a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+    <div class="container-news">
+        <div class="news-header">
+            <h1>Ecology News</h1>
+        </div>
 
-        <footer class="footer">
-            <p>Сделано командой "BUGbusters" 2022</p>
-        </footer>
+        <div class="blocks-news">
+            <div class=" item one">
+                <h6 class="blocks-news_header">Коалы признаны исчезающим видом. Все из-за пожаров и вырубки лесов</h6>
+                <p class="par-news">Австралия внесла коал в список исчезающих видов после резкого сокращения их численности на большей части восточного побережья страны. Эти сумчатые оказались под угрозой по целому ряду причин, включая расчистку земель, лесные пожары, засухи и болезни. <a class="link-news" href="https://www.bbc.com/russian/news-60348366" target="_blank">Подробнее...</a> </p>
+            </div>
+
+            <div class="item two">
+                <h6 class="blocks-news_header">Леса Амазонки вырубают с рекордной скоростью.</h6>
+                <p class="par-news" >Количество деревьев, вырубленных в Бразилии на Амазонке в январе этого года, в 5 раз превысило показатели января прошлого года. Об этом свидетельствуют данные, полученные со спутников. <a class="link-news" href="https://www.bbc.com/russian/news-60378297" target="_blank">Подробнее...</a></p>
+            </div>
+
+            <div class="item three">
+                <h6 class="blocks-news_header">Реки парацетамола: загрязнение водоемов лекарствами угрожает здоровью человечества</h6>
+                <p class="par-news">Реки мира сильно загрязнены разными лекарствами и прочими продуктами фармацевтики, и это представляет собой угрозу и окружающей среде, и здоровью людей - таковы результаты большого исследования, проведенного британскими учеными. <a class="link-news" href="https://www.bbc.com/russian/news-60395050" target="_blank">Подробнее...</a></p>
+            </div>
+
+            <div class="item four">
+                <h6 class="blocks-news_header">Коралловый риф у берегов Австралии снова пережил массовое вымирание</h6>
+                <p class="par-news">Потепление морской воды - особенно в феврале этого года — ученые считают причиной масштабной гибели кораллов самого большого на планете рифа. Умершие кораллы белеют, и это хорошо заметно с воздуха: протяженные участки рифа поражены полностью, хотя есть и благополучные участки. <a class="link-news" href="https://www.bbc.com/russian/news-52056151" target="_blank">Подробнее...</a></p>
+            </div>
+
+            <div class="item five">
+                <h6 class="blocks-news_header">В пустыне Атакама на севере Чили лежат огромные горы одежды и обуви. Как она там оказалась?</h6>
+                <p class="par-news">В пустыне Атакама на севере Чили близ города Икике, расположенного в 1,8 тыс. километров от столицы Сантьяго, лежат огромные горы одежды и обуви. Ее привезли сюда на переработку из США, Европы и Азии, но вместо этого выбросили. Вот как это выглядит. <a class="link-news" href="https://www.bbc.com/russian/news-60169625" target="_blank">Подробнее...</a></p>
+            </div>
+
+            <div class="item six">
+                <h6 class="blocks-news_header">Пожары в России 2021 года вызвали рекордное сокращение лесного покрова на севере планеты</h6>
+                <p class="par-news">Потери лесного покрова в северных регионах мира в 2021 году стали самыми высокими за всю историю наблюдений: по сравнению с 2020 годом они выросли на 30%, сообщают эксперты Global Forest Watch - приложения для мониторинга лесного покрова планеты в реальном времени. Главной причиной такого скачка они называют резкий рост числа лесных пожаров в России. <a class="link-news" href="https://www.bbc.com/russian/news-61259933" target="_blank">Подробнее...</a></p>
+            </div>
+        </div>
     </div>
 
+    <footer class="footer">
+        <p>Сделано командой "BUGbusters" 2022</p>
+    </footer>
+
     <script src="./assets/js/registration.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
