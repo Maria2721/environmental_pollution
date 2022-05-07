@@ -1,3 +1,7 @@
+.container-news{
+    margin-top: 80px;
+}
+
 .news-header {
     display: flex;
     justify-content: center;
