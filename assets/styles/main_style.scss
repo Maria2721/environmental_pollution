@@ -6,13 +6,42 @@ $fontFam: 'Montserrat';
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1199px) {
+    .nav__logo {
+        margin-left: 2%;
+    }
+
+    .nav__button {
+        margin-right: 2%;
+    }
+
+    .nav__links {
+        margin-left: 2%;
+    }
+    
+}
+
 @media screen and (max-width: 481px) {
     .nav__logo {
-        display: none;
+        >img {
+            width: 80%;
+        }
+    }
+
+    .nav__button {
+        margin-right: 2%;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
     }
 
     .header__title-text {
         >h1 {
+            font-size: 18px;
+        }
+        >p {
             font-size: 18px;
         }
     }
@@ -107,3 +136,40 @@ body {
 }
 // Конец стилей для header (Лера)
 
+// Стили для формы регистрации
+$green-color:#88A550;
+$darkgreen-color:#4C6816;
+$dark-color:#282623;
+$grey-color:#A3A599;
+$yellow-color:#FBCD4B;
+
+$default-font: 'Roboto',
+sans-serif,
+Times;
+
+.registration_form {
+    max-width: 25rem;
+    padding: 5px;
+    padding-bottom: 30px;
+    margin: 10px auto;
+    color: $dark-color;
+
+    .btn {
+        padding: 5px;
+        background-color: $green-color;
+        border: none;
+        font-size: 1.2rem;
+    }
+    .btn:focus, .btn:active {
+        box-shadow: none !important;
+    }
+    
+    #errorMessage {
+        text-align: center;
+        color: $darkgreen-color;
+    }
+    
+    p {
+        font-size: small;
+    }
+}

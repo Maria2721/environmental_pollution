@@ -3,12 +3,37 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1199px) {
   .nav__logo {
-    display: none;
+    margin-left: 2%;
+  }
+
+  .nav__button {
+    margin-right: 2%;
+  }
+
+  .nav__links {
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 481px) {
+  .nav__logo > img {
+    width: 80%;
+  }
+
+  .nav__button {
+    margin-right: 2%;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
   }
 
   .header__title-text > h1 {
+    font-size: 18px;
+  }
+  .header__title-text > p {
     font-size: 18px;
   }
 }
@@ -80,4 +105,28 @@ body .header .header__title-bgpict .header__title-text > a > button:hover {
   background-color: #fff;
   color: rgba(6, 198, 6, 0.655);
   transition: 0.3s;
+}
+
+.registration_form {
+  max-width: 25rem;
+  padding: 5px;
+  padding-bottom: 30px;
+  margin: 10px auto;
+  color: #282623;
+}
+.registration_form .btn {
+  padding: 5px;
+  background-color: #88A550;
+  border: none;
+  font-size: 1.2rem;
+}
+.registration_form .btn:focus, .registration_form .btn:active {
+  box-shadow: none !important;
+}
+.registration_form #errorMessage {
+  text-align: center;
+  color: #4C6816;
+}
+.registration_form p {
+  font-size: small;
 }/*# sourceMappingURL=main_style.css.map */
