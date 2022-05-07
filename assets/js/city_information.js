@@ -18,7 +18,7 @@ function changeCity() {
             " мм.рт.ст";
         });
       fetch(
-        "http://api.openweathermap.org/data/2.5/air_pollution?lat=55.44&lon=37.36&appid=627cf8a1454b6eb1a2023bc5580b2107"
+        "https://api.openweathermap.org/data/2.5/air_pollution?lat=55.44&lon=37.36&appid=627cf8a1454b6eb1a2023bc5580b2107"
       )
         .then((response) => response.json())
         .then((pollution) => {
@@ -51,7 +51,7 @@ function changeCity() {
             " мм.рт.ст";
         });
       fetch(
-        "http://api.openweathermap.org/data/2.5/air_pollution?lat=59.57&lon=30.19&appid=627cf8a1454b6eb1a2023bc5580b2107"
+        "https://api.openweathermap.org/data/2.5/air_pollution?lat=59.57&lon=30.19&appid=627cf8a1454b6eb1a2023bc5580b2107"
       )
         .then((response) => response.json())
         .then((pollution) => {
@@ -84,7 +84,7 @@ function changeCity() {
             " мм.рт.ст";
         });
       fetch(
-        "http://api.openweathermap.org/data/2.5/air_pollution?lat=68.58&lon=33.05&appid=627cf8a1454b6eb1a2023bc5580b2107"
+        "https://api.openweathermap.org/data/2.5/air_pollution?lat=68.58&lon=33.05&appid=627cf8a1454b6eb1a2023bc5580b2107"
       )
         .then((response) => response.json())
         .then((pollution) => {
@@ -117,7 +117,7 @@ function changeCity() {
             " мм.рт.ст";
         });
       fetch(
-        "http://api.openweathermap.org/data/2.5/air_pollution?lat=55.02&lon=82.56&appid=627cf8a1454b6eb1a2023bc5580b2107"
+        "https://api.openweathermap.org/data/2.5/air_pollution?lat=55.02&lon=82.56&appid=627cf8a1454b6eb1a2023bc5580b2107"
       )
         .then((response) => response.json())
         .then((pollution) => {
@@ -150,7 +150,7 @@ function changeCity() {
             " мм.рт.ст";
         });
       fetch(
-        "http://api.openweathermap.org/data/2.5/air_pollution?lat=51.40&lon=39.11&appid=627cf8a1454b6eb1a2023bc5580b2107"
+        "https://api.openweathermap.org/data/2.5/air_pollution?lat=51.40&lon=39.11&appid=627cf8a1454b6eb1a2023bc5580b2107"
       )
         .then((response) => response.json())
         .then((pollution) => {
