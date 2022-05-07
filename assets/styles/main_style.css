@@ -1,68 +1,107 @@
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 481px) {
   .nav__logo {
-    display: none; }
+    display: none;
+  }
 
   .header__title-text > h1 {
-    font-size: 18px; } }
+    font-size: 18px;
+  }
+}
 body {
   margin: 0 auto;
-  font-family: "Montserrat"; }
-  body .header {
-    height: 100vh; }
-    body .header .nav-color {
-      background-color: rgba(0, 0, 0, 0.909); }
-    body .header .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0; }
-      body .header .nav .nav__links > a {
-        text-decoration: none;
-        color: #fff;
-        margin-right: 20px; }
-        body .header .nav .nav__links > a:hover {
-          color: rgba(6, 198, 6, 0.655);
-          transition: .3s; }
-      body .header .nav .nav__button > button {
-        padding: 20px;
-        color: #fff;
-        background-color: rgba(6, 198, 6, 0.655);
-        border: 1px solid rgba(0, 0, 0, 0.909);
-        font-family: "Montserrat";
-        font-weight: 600; }
-        body .header .nav .nav__button > button:hover {
-          background-color: #fff;
-          color: rgba(6, 198, 6, 0.655);
-          transition: .3s; }
-    body .header .header__title-bgpict {
-      background: url(../img/header/bg1.jpg);
-      background-size: cover;
-      background-repeat: no-repeat; }
-      body .header .header__title-bgpict .header__title-text {
-        max-width: 700px;
-        padding: 50px 0;
-        font-size: 1.5em;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.513); }
-        body .header .header__title-bgpict .header__title-text > h1,
-        body .header .header__title-bgpict .header__title-text h2,
-        body .header .header__title-bgpict .header__title-text p {
-          padding-left: 2%; }
-        body .header .header__title-bgpict .header__title-text > a > button {
-          margin-left: 2%;
-          padding: 20px;
-          color: #fff;
-          background-color: rgba(6, 198, 6, 0.655);
-          border: 1px solid rgba(6, 198, 6, 0.655);
-          font-family: "Montserrat";
-          font-weight: 600; }
-          body .header .header__title-bgpict .header__title-text > a > button:hover {
-            background-color: #fff;
-            color: rgba(6, 198, 6, 0.655);
-            transition: .3s; }
+  font-family: "Montserrat";
+}
+body .header {
+  height: 100vh;
+}
+body .header .nav-color {
+  background-color: rgba(0, 0, 0, 0.909);
+}
+body .header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+body .header .nav .nav__links > a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+body .header .nav .nav__links > a:hover {
+  color: rgba(6, 198, 6, 0.655);
+  transition: 0.3s;
+}
+body .header .nav .nav__button > button {
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(6, 198, 6, 0.655);
+  border: 1px solid rgba(0, 0, 0, 0.909);
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+body .header .nav .nav__button > button:hover {
+  background-color: #fff;
+  color: rgba(6, 198, 6, 0.655);
+  transition: 0.3s;
+}
+body .header .header__title-bgpict {
+  background: url(../img/header/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .header .header__title-bgpict .header__title-text {
+  max-width: 700px;
+  padding: 50px 0;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.513);
+}
+body .header .header__title-bgpict .header__title-text > h1,
+body .header .header__title-bgpict .header__title-text h2,
+body .header .header__title-bgpict .header__title-text p {
+  padding-left: 2%;
+}
+body .header .header__title-bgpict .header__title-text > a > button {
+  margin-left: 2%;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(6, 198, 6, 0.655);
+  border: 1px solid rgba(6, 198, 6, 0.655);
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+body .header .header__title-bgpict .header__title-text > a > button:hover {
+  background-color: #fff;
+  color: rgba(6, 198, 6, 0.655);
+  transition: 0.3s;
+}
 
-/*# sourceMappingURL=main_style.css.map */
+.registration_form {
+  max-width: 25rem;
+  padding: 5px;
+  padding-bottom: 30px;
+  margin: 10px auto;
+  color: #282623;
+}
+.registration_form .btn {
+  padding: 5px;
+  background-color: #88A550;
+  border: none;
+  font-size: 1.2rem;
+}
+.registration_form .btn:focus, .registration_form .btn:active {
+  box-shadow: none !important;
+}
+.registration_form #errorMessage {
+  text-align: center;
+  color: #4C6816;
+}
+.registration_form p {
+  font-size: small;
+}/*# sourceMappingURL=main_style.css.map */
