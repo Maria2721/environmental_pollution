@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            fetch("https://api.openweathermap.org/data/2.5/weather?lat=59.57&lon=30.19&appid=627cf8a1454b6eb1a2023bc5580b2107")
+                .then(response => response.json())
+                .then(weather => {
+                    document.getElementById("latitude").innerHTML = 'Широта: ' + weather.coord.lat;
+                    document.getElementById("longitude").innerHTML = 'Долгота: ' + weather.coord.lon;
+                    document.getElementById("temperature").innerText = 'Температура: ' + Math.round(weather.main.temp - 273) + ' C';
+                    document.getElementById("pressure").innerText = 'Давление: ' + Math.round(weather.main.pressure / 1.333) + ' мм.рт.ст';
+                })
+        });
+        document.addEventListener("DOMContentLoaded", function (event) {
+            fetch('http://api.openweathermap.org/data/2.5/air_pollution?lat=59.57&lon=30.19&appid=627cf8a1454b6eb1a2023bc5580b2107')
+                .then(response => response.json())
+                .then(pollution => {
+                    console.log(pollution);
+                    document.getElementById("co").innerHTML = 'CO: ' + pollution.list[0].components.co + ' μg/m3';
+                    document.getElementById("no").innerHTML = 'NO: ' + pollution.list[0].components.no + ' μg/m3';
+                    document.getElementById("no2").innerText = 'NO2: ' + pollution.list[0].components.no2 + ' μg/m3';
+                    document.getElementById("so2").innerText = 'SO2: ' + pollution.list[0].components.so2 + ' μg/m3';
+                })
+        });
+    </script>
 </head>
+
 <body>
-    
+    <article>
+        <div id="list">Выберите город:
+            <select>
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+                <option>Мурманск</option>
+                <option>новосибирск</option>
+                <option>Воронеж</option>
+            </select>
+        </div><br>
+        <section class="weather">
+            <div id="latitude"></div>
+            <div id="longitude"></div>
+            <div id="temperature"></div>
+            <div id="pressure"></div>
+        </section><br>
+        <section class="pollution">
+            <div id="co"></div>
+            <div id="no"></div>
+            <div id="no2"></div>
+            <div id="so2"></div>
+        </section>
+    </article>
+
 </body>
+
 </html>
