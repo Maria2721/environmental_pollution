@@ -2,11 +2,29 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1199px) {
   .nav__logo {
-    display: none; }
+    margin-left: 2%; }
+
+  .nav__button {
+    margin-right: 2%; }
+
+  .nav__links {
+    margin-left: 2%; } }
+@media screen and (max-width: 481px) {
+  .nav__logo > img {
+    width: 80%; }
+
+  .nav__button {
+    margin-right: 2%; }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column; }
 
   .header__title-text > h1 {
+    font-size: 18px; }
+  .header__title-text > p {
     font-size: 18px; } }
 body {
   margin: 0 auto;

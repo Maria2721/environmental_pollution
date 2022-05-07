@@ -6,13 +6,42 @@ $fontFam: 'Montserrat';
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1199px) {
+    .nav__logo {
+        margin-left: 2%;
+    }
+
+    .nav__button {
+        margin-right: 2%;
+    }
+
+    .nav__links {
+        margin-left: 2%;
+    }
+    
+}
+
 @media screen and (max-width: 481px) {
     .nav__logo {
-        display: none;
+        >img {
+            width: 80%;
+        }
+    }
+
+    .nav__button {
+        margin-right: 2%;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
     }
 
     .header__title-text {
         >h1 {
+            font-size: 18px;
+        }
+        >p {
             font-size: 18px;
         }
     }
